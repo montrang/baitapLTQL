@@ -1,0 +1,67 @@
+﻿@model LTQLWEB2.Models.CHITIETHD
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CHITIETHD</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HOADON.NHANVIEN_MaNV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HOADON.NHANVIEN_MaNV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SANPHAM.TenSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SANPHAM.TenSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DonGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiamGia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiamGia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThanhTien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThanhTien)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
